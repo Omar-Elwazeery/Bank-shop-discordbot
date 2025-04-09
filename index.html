@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizarding Bank & Shop Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Wizarding Bank Logo" class="logo">
+                <h1>Wizarding Bank & Shop</h1>
+            </div>
+            <p class="tagline">Bringing the magical economy of Harry Potter to your Discord server</p>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Manage Your Magical Fortune</h2>
+                    <p>A feature-rich Discord bot that implements a Harry Potter themed economy system with Galleons, Sickles, and Knuts.</p>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🏦</div>
+                        <h3>Banking System</h3>
+                        <ul>
+                            <li>Harry Potter currency system</li>
+                            <li>Balance checking</li>
+                            <li>Regular income based on roles</li>
+                            <li>Work to earn money</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛒</div>
+                        <h3>Shop System</h3>
+                        <ul>
+                            <li>Browse and purchase magical items</li>
+                            <li>Customizable wands and brooms</li>
+                            <li>Magical accessories</li>
+                            <li>Inventory management</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👤</div>
+                        <h3>User Profiles</h3>
+                        <ul>
+                            <li>Customizable profiles</li>
+                            <li>Set favorite spells and pets</li>
+                            <li>Personal bio</li>
+                            <li>Hogwarts house affiliation</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>Administration</h3>
+                        <ul>
+                            <li>Balance modification</li>
+                            <li>Economy statistics</li>
+                            <li>Transaction logs</li>
+                            <li>Economy analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="technology">
+                <h2>Technology Stack</h2>
+                <p class="tech-intro">Our Wizarding Bank & Shop Discord bot is built with modern technologies to ensure reliability, performance, and scalability:</p>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>The core programming language powering the bot's functionality.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">⚙️</div>
+                        <h3>Discord.py</h3>
+                        <p>Modern, easy to use, feature-rich API wrapper for Discord, with both synchronous and asynchronous support.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🗄️</div>
+                        <h3>SQLite</h3>
+                        <p>Lightweight, serverless database for storing user data, inventories, and transactions.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🔄</div>
+                        <h3>Asynchronous Programming</h3>
+                        <p>Leverages Python's asyncio for efficient handling of concurrent operations.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🛠️</div>
+                        <h3>Discord Slash Commands</h3>
+                        <p>Implements Discord's slash command API for intuitive user interaction.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🔍</div>
+                        <h3>SQL Database Design</h3>
+                        <p>Carefully structured database with relationships for managing economy and inventory systems.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">📊</div>
+                        <h3>Data Analysis</h3>
+                        <p>Custom analytics for tracking economy trends and user behavior.</p>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon">🔒</div>
+                        <h3>Security Practices</h3>
+                        <p>Implements role-based permissions and secure database transactions.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="commands">
+                <h2>Commands</h2>
+                <div class="commands-container">
+                    <div class="command-category">
+                        <h3>General Commands</h3>
+                        <div class="command">
+                            <code>/balance [user]</code>
+                            <p>Check your balance or another user's balance</p>
+                        </div>
+                        <div class="command">
+                            <code>/work</code>
+                            <p>Work to earn money (1-hour cooldown)</p>
+                        </div>
+                        <div class="command">
+                            <code>/collect_income</code>
+                            <p>Collect weekly income based on your roles</p>
+                        </div>
+                        <div class="command">
+                            <code>/shop</code>
+                            <p>Browse and buy items from the shop</p>
+                        </div>
+                        <div class="command">
+                            <code>/profile [user]</code>
+                            <p>View your or another user's profile</p>
+                        </div>
+                    </div>
+                    
+                    <div class="command-category">
+                        <h3>Administrative Commands</h3>
+                        <div class="command">
+                            <code>/modify_balance &lt;user&gt; &lt;amount&gt; &lt;currency&gt;</code>
+                            <p>Modify a user's balance</p>
+                        </div>
+                        <div class="command">
+                            <code>/economy_stats</code>
+                            <p>Show economy statistics</p>
+                        </div>
+                        <div class="command">
+                            <code>/transaction_log [user]</code>
+                            <p>Show recent balance modifications</p>
+                        </div>
+                        <div class="command">
+                            <code>/leaderboard &lt;category&gt;</code>
+                            <p>Show various leaderboards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-commands">
+                    <a href="commands.html" class="btn secondary">View All Commands</a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Wizarding Bank & Shop Discord Bot</p>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands | Wizarding Bank & Shop Discord Bot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Wizarding Bank Logo" class="logo">
+                <h1>Wizarding Bank & Shop</h1>
+            </div>
+            <p class="tagline">Complete Command Reference</p>
+            <nav>
+                <a href="index.html" class="btn secondary">Back to Home</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="commands-list">
+                <h2>All Commands</h2>
+                
+                <div class="command-group">
+                    <h3>General Commands</h3>
+                    <div class="command-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/balance [user]</code></td>
+                                    <td>Check your balance or another user's balance</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/work</code></td>
+                                    <td>Work to earn money (1-hour cooldown)</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/collect_income</code></td>
+                                    <td>Collect weekly income based on your roles</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/shop</code></td>
+                                    <td>Browse and buy items from the shop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/profile [user]</code></td>
+                                    <td>View your or another user's profile</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/destroy [item_type]</code></td>
+                                    <td>Destroy your wand or broom</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <h3>Administrative Commands</h3>
+                    <div class="command-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/modify_balance &lt;user&gt; &lt;amount&gt; &lt;currency&gt;</code></td>
+                                    <td>Modify a user's balance</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/economy_stats</code></td>
+                                    <td>Show economy statistics</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/transaction_log [user]</code></td>
+                                    <td>Show recent balance modifications</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/user_stats &lt;user&gt;</code></td>
+                                    <td>Show detailed stats for a user</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/leaderboard &lt;category&gt;</code></td>
+                                    <td>Show various leaderboards</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/economy_analysis</code></td>
+                                    <td>Show detailed economy analysis</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/advanced_analysis</code></td>
+                                    <td>Show advanced economy metrics</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/transaction_analysis [days]</code></td>
+                                    <td>Show detailed transaction analysis</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="command-group">
+                    <h3>Shop Management Commands</h3>
+                    <div class="command-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>/add_item &lt;name&gt; &lt;price&gt; &lt;currency&gt; &lt;category&gt; &lt;description&gt; [required_role]</code></td>
+                                    <td>Add an item to the shop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/create_wand &lt;name&gt; &lt;price&gt; &lt;currency&gt; &lt;wood&gt; &lt;core&gt; &lt;length&gt; &lt;flexibility&gt; &lt;power&gt;</code></td>
+                                    <td>Add a wand to the shop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/create_broom &lt;name&gt; &lt;price&gt; &lt;currency&gt; &lt;wood&gt; &lt;bristle&gt; &lt;length&gt; &lt;speed&gt;</code></td>
+                                    <td>Add a broom to the shop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/craft_accessories &lt;name&gt; &lt;price&gt; &lt;currency&gt; &lt;material&gt; &lt;type&gt; &lt;enchantment&gt; &lt;description&gt;</code></td>
+                                    <td>Create a custom accessory</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/remove_item &lt;category&gt;</code></td>
+                                    <td>Remove an item from the shop</td>
+                                </tr>
+                                <tr>
+                                    <td><code>/remove_user_item &lt;user&gt;</code></td>
+                                    <td>Remove an item from a user's inventory</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Wizarding Bank & Shop Discord Bot</p>
+        </footer>
+    </div>
+</body>
+</html> 
