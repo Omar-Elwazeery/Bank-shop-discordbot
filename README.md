@@ -25,13 +25,16 @@ A feature-rich Discord bot that implements a Harry Potter themed economy system 
 - **Display Profile**: View your own or other users' profiles
 - **House Affiliations**: Display your Hogwarts house with custom emojis
 
+### VIP & Membership System
+- **VIP Purchase**: Users can buy VIP memberships for special perks
+- **Cooldown Notifications**: VIP members receive notifications when their cooldowns are over
+- **VIP Status**: Check your current VIP membership status
+- **Admin VIP Management**: Admins can grant or revoke VIP status and list all VIP members
+
 ### Administrative Features
 - **Balance Modification**: Administrators can modify user balances
-- **Economy Statistics**: View detailed economy statistics
 - **Transaction Logs**: Review logs of all financial transactions
-- **User Stats**: Get detailed information about specific users
 - **Leaderboards**: View rankings for wealth, transactions, and income
-- **Economy Analysis**: Get insights into the server's economy
 - **Item Management**: Add, modify, or remove items from the shop
 
 ## Setup
@@ -104,16 +107,22 @@ A feature-rich Discord bot that implements a Harry Potter themed economy system 
 - `/shop` - Browse and buy items from the shop
 - `/profile [user]` - View your or another user's profile
 - `/destroy [item_type]` - Destroy your wand or broom
+- `/use` - Use an item from your inventory
+- `/buy_vip <tier>` - Purchase a VIP membership for cooldown notifications
+- `/vip_status` - Check your VIP membership status
+- `/leaderboard <category>` - Show various leaderboards
 
 ### Administrative Commands
 - `/modify_balance <user> <amount> <currency>` - Modify a user's balance
-- `/economy_stats` - Show economy statistics
-- `/transaction_log [user]` - Show recent balance modifications
-- `/user_stats <user>` - Show detailed stats for a user
-- `/leaderboard <category>` - Show various leaderboards
-- `/economy_analysis` - Show detailed economy analysis
-- `/advanced_analysis` - Show advanced economy metrics
-- `/transaction_analysis [days]` - Show detailed transaction analysis
+- `/reset_cooldown <user> <cooldown_type>` - Reset cooldowns for a user
+- `/bulk_modify_balance <role> <amount> <currency> [reason]` - Modify multiple users' balances at once
+- `/bulk_reset_cooldown <role> <cooldown_type>` - Reset cooldowns for multiple users at once
+- `/get_logs <user> [transaction_type] [sort_order] [date_range] [limit] [export]` - Get detailed transaction logs for a user with optional export
+- `/backup_db` - Manually create a database backup
+- `/sync_commands` - Manually sync commands with Discord
+- `/admin_vip <action> <user> [tier]` - Grant or revoke VIP membership for a user
+- `/list_vip` - List all active VIP members
+
 
 ### Shop Management Commands
 - `/add_item <name> <price> <currency> <category> <description> [required_role]` - Add an item to the shop
