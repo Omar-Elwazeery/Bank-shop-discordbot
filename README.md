@@ -39,7 +39,7 @@ A feature-rich Discord bot that implements a Harry Potter themed economy system 
 
 ## Setup
 
-1. Clone the repository
+1. Contact me for the code
 2. Install dependencies: `pip install discord.py`
 3. Configure the `config.json` file:
    - Add your Discord bot token
